@@ -16,24 +16,24 @@ export function useSoundEffects() {
   const kissAudio = new Audio(kissPath);
   kissAudio.preload = 'auto';
 
-  const playNoSound = (count) => {
-    // Wybieramy dźwięk na podstawie licznika
-    const source = count === 0 ? carCrashAudio : noSoundAudio;
-    const audio = new Audio(source);
+const playNoSound = (count) => {
+    // Wybieramy GOTOWY obiekt, a nie ścieżkę
+    const audio = count === 0 ? carCrashAudio : noSoundAudio;
     
-    audio.volume = 0.3; // Ustaw głośność, żeby nie ogłuchnąć ;)
-    
+    audio.currentTime = 0; // Resetuj, żeby można było klikać szybko
+    audio.volume = 0.3;
     audio.play().catch(err => console.warn("Audio blocked:", err));
   };
 
   const playYesSound = (count) => {
-    const source = count === 3 ? kissAudio : yippieAudio;
-    const audio = new Audio(source);
-
+    // Wybieramy GOTOWY obiekt
+    const audio = count === 3 ? kissAudio : yippieAudio;
+    
+    audio.currentTime = 0;
     audio.volume = 0.3;
-
     audio.play().catch(err => console.warn("Audio blocked:", err));
   };
 
   return { playNoSound, playYesSound };
 }
+
