@@ -1,38 +1,53 @@
-# walentymki-projekt
+# Valentine's day site - project fo fun 
 
-This template should help get you started developing with Vue 3 in Vite.
+## A single page application built with Vue and GSAP
 
-## Recommended IDE Setup
+> Check out my site in it's full glory: [Valentine](https://bubiwalentynki.netlify.app/)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This is a simple project made for fun. Filled with various animations, this single page application has several js scripts, components and a single view to create this fun-filled experience. It's as interactive as one can get - custom button animations, card shaking, cats to pet and heart confetti at the end to finalize the deal.
 
-## Recommended Browser Setup
+This site includes gifs and sound effects that make for a creative, loving mess - in a good way.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Customize configuration
+#### 🛠️ Tech Stack 
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+* **Framework:** Vue.js 3
+* **Animations:** GSAP (GreenSock Animation Platform)
+* **Build Tool:** Vite
 
-## Project Setup
+---
 
-```sh
-npm install
+### ⚙️ Installing & Running
+
+Follow the guide beneath to set up the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/werAnnOstrowska/valentines.git](https://github.com/werAnnOstrowska/valentines.git)
+   cd walentynki-projekt
+   ```
+
+2. **Install dependencies**<br>
+
+```
+ npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. **Run the application**<br>
 
-```sh
-npm run dev
-```
+    ```
+    npm run dev
+    ```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+### Showcase
+
+![happyMain](./READMEassets/happy.png "happy")
+
+![sadMain](./READMEassets/sad.png "sad")
+
+![buttonsGif](./READMEassets/buttonsGif.gif "buttons")
+
+![confettiGif](./READMEassets/confettiGif.gif "confetti")
